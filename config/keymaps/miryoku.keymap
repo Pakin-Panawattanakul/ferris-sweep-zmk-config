@@ -108,16 +108,16 @@
         colemak {
             bindings = <
                 //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-                //│    Q     │    W     │    F     │    P     │    B     │   │    J     │    L     │    U     │    Y     │    ;     │
-                    &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L     &kp U        &kp Y      &kp SEMI
+                //│    Q     │    W     │    F     │    P     │    B     │   │    J     │    L     │    U     │    Y     │    '     │
+                    &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L     &kp U        &kp Y      &kp SQT
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│    A     │    R     │    S     │    T     │    G     │   │    M     │    N     │    E     │    I     │    O     │
-                    HRML( A,     R,        S,           T)       &kp G         &kp M  HRMR(N,      E,        I,         O)
+                    HRML( A,     R,        S,           T)  &lt MEDIA G    &lt FUN M  HRMR(N,      E,        I,         O)
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│    Z     │    X     │    C     │    D     │    V     │   │    K     │    H     │ , <      │ . >      │ / ?      │
-                   &lts MEDIA Z  &kp X      &kp C      &kp D      &kp V         &kp K      &kp H      &kp COMMA  &kp DOT  &lts FUN FSLH
+                   &kp Z         &kp X      &kp C      &kp D      &kp V         &kp K      &kp H      &kp COMMA  &kp DOT  &kp FSLH
                 //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                   &lt NAV TAB &lt MOUSE BSPC  &lt SYM SPACE &lt NUM ENTER
+                                                   &lt MOUSE SPACE &lt NAV ESC  &lt SYM ENTER &lt NUM BSPC
                 //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -128,8 +128,8 @@
                 //│    [     │    7     │    8     │    9     │    ]     │   │          │          │          │          │          │
                     &kp LBKT    &kp N7     &kp N8     &kp N9    &kp RBKT        &none      &none      &none      &none      &none
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                //│    '     │    4     │    5     │    6     │    =     │   │          │          │          │          │          │
-                    &kp SQT     &kp N4     &kp N5     &kp N6    &kp EQUAL       &none    &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
+                //│    ;     │    4     │    5     │    6     │    =     │   │          │          │          │          │          │
+                    &kp SCLN    &kp N4     &kp N5     &kp N6    &kp EQUAL       &none    &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│     `    │    1     │    2     │    3     │    \     │   │          │          │          │          │          │
                     &kp GRAVE   &kp N1     &kp N2     &kp N3   &kp BSLH        &none      &none      &none      &none      &none
@@ -145,8 +145,8 @@
                 //│     {    │    @     │    #     │    (     │    }     │   │          │          │          │          │          │
                     &kp LBRC   &kp AMPS   &kp ASTRK  &kp LPAR   &kp RBRC        &none      &none      &none      &none      &none
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                //│    "     │    $     │    %     │    ^     │    +     │   │          │          │          │          │          │
-                   &kp DQT     &kp DLLR   &kp PRCNT  &kp CARET   &kp PLUS        &none    &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
+                //│    :     │    $     │    %     │    ^     │    +     │   │          │          │          │          │          │
+                   &kp COLN    &kp DLLR   &kp PRCNT  &kp CARET   &kp PLUS        &none    &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│    ~     │    !     │    @     │    #     │    |     │   │          │          │          │          │          │
                    &kp TILDE   &kp EXCL    &kp AT   &kp HASH   &kp PIPE       &none      &none      &none      &none      &none
@@ -166,7 +166,7 @@
                     &kp F11     &kp F4     &kp F5     &kp F6    &kp CAPS       &none      &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│   F10    │   F1     │   F2     │   F3     │          │   │          │          │          │          │          │
-                    &kp F10     &kp F1     &kp F2     &kp F3     &kp INS         &none      &none      &none      &none      &none
+                    &kp F10     &kp F1     &kp F2     &kp F3     &kp SLCK        &none      &none      &none      &none      &none
                 //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                                      &none      &none           &none       &none
                 //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -177,7 +177,7 @@
             bindings = <
                 //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
                 //│          │          │          │          │          │   │          │          │          │          │          │
-                    &none       &none      &none      &none     &none         &key_repeat &kp K_PASTE &kp K_COPY &kp K_CUT &kp DEL
+                    &kp TAB     &none      &none      &none     &none         &key_repeat &kp K_PASTE &kp K_COPY &kp K_CUT &kp DEL
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│          │          │          │          │          │   │   left   │  down    │   up     │  right   │          │
                     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &none          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
@@ -185,7 +185,7 @@
                 //│          │          │          │          │          │   │          │          │          │          │          │
                     &none       &none      &none      &none     &none          &kp HOME  &kp PG_DN  &kp PG_UP   &kp END   &kp ENTER
                 //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                      &none       &none        &none      &mo MOUSE
+                                                      &none       &none        &none      &none
             //                                     ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -194,7 +194,7 @@
             bindings = <
                 //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
                 //│          │          │          │          │          │   │          │          │          │          │          │
-                    &none       &none      &none      &none      &none        &key_repeat &kp K_PASTE &kp K_COPY &kp K_CUT  &kp DEL
+                    &kp TAB     &none      &none      &none      &none        &key_repeat &kp K_PASTE &kp K_COPY &kp K_CUT  &kp DEL
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│          │          │          │          │          │   │   left   │   down   │    up    │  right   │          │
                     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT   &none   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &kp BSPC
