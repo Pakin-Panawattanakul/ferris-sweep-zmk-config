@@ -177,7 +177,7 @@
             bindings = <
                 //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
                 //│          │          │          │          │          │   │          │          │          │          │          │
-                    &kp TAB     &none      &none      &none     &none         &key_repeat &kp K_PASTE &kp K_COPY &kp K_CUT &kp DEL
+                    &LA(TAB)   &LC(TAB)   &kp TAB     &none     &none         &key_repeat &kp K_PASTE &kp K_COPY &kp K_CUT &kp DEL
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│          │          │          │          │          │   │   left   │  down    │   up     │  right   │          │
                     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &none          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
@@ -194,7 +194,7 @@
             bindings = <
                 //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
                 //│          │          │          │          │          │   │          │          │          │          │          │
-                    &kp TAB     &none      &none      &none      &none        &key_repeat &kp K_PASTE &kp K_COPY &kp K_CUT  &kp DEL
+                    &LA(TAB)   &LC(TAB)   &kp TAB     &none     &none         &key_repeat &kp K_PASTE &kp K_COPY &kp K_CUT &kp DEL
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│          │          │          │          │          │   │   left   │   down   │    up    │  right   │          │
                     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT   &none   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &kp BSPC
@@ -211,15 +211,15 @@
             bindings = <
                 //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
                 //│          │          │          │          │          │   │          │          │          │          │          │
-                    &none       &none      &none      &none     &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &out OUT_TOG
+                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none     &none          &none   &kp C_BRI_DN &kp C_BRI_UP &none      &none 
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│          │          │          │          │          │   │          │          │          │          │          │
-                     &none      &none     &none       &none      &none       &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp C_MUTE
+                 &out OUT_TOG  &none     &none       &none      &none       &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &none
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│          │          │          │          │          │   │          │          │          │          │          │
-                    &none       &none      &none      &none      &none      &kp C_BRI_DN  &kp LS(C_VOL_DN) &kp LS(C_VOL_UP) &kp C_BRI_UP &none
+                    &none       &none      &none      &none      &none         &none      &none       &none     &none       &none
                 //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                     &none      &none          &kp C_PP   &none
+                                                     &none      &none          &kp C_MUTE &kp C_PP   
                 //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
