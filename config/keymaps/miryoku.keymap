@@ -21,9 +21,9 @@
 #define HRML(k1,k2,k3,k4) &hml LGUI k1  &hml LALT k2  &hml LCTRL k3  &hml LSHFT k4
 #define HRMR(k1,k2,k3,k4) &hmr RSHFT k1  &hmr RCTRL k2  &hmr RALT k3  &hmr RGUI k4
 
-#define TAPPING_TERM 280
-#define QUICK_TAP 175
-#define PRIOR_IDLE 150
+#define TAPPING_TERM 200 
+#define QUICK_TAP 150
+#define PRIOR_IDLE 80
 / {
     behaviors {
         lt: layer_tap {
@@ -38,7 +38,7 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tab-preferred";
             require-prior-idle-ms = <PRIOR_IDLE>;
             tapping-term-ms = <TAPPING_TERM>;
             quick-tap-ms = <QUICK_TAP>;
@@ -49,7 +49,7 @@
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tab-preferred";
             require-prior-idle-ms = <PRIOR_IDLE>;
             tapping-term-ms = <TAPPING_TERM>;
             quick-tap-ms = <QUICK_TAP>;
