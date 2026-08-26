@@ -70,7 +70,7 @@
 
         combo_capword{
             timeout-ms = <60>;
-            key-positions = <12 17>;
+            key-positions = <13 16>;
             bindings = <&caps_word>;
             layers = <0>;
             require-prior-idle-ms = <100>;
@@ -107,8 +107,8 @@
         colemak {
             bindings = <
                 //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-                //│    Q     │    W     │    F     │    P     │    B     │   │    J     │    L     │    U     │    Y     │    '     │
-                    &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L     &kp U        &kp Y      &kp SQT
+                //│    Q     │    W     │    F     │    P     │    B     │   │    J     │    L     │    U     │    Y     │    ;     │
+                    &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L     &kp U        &kp Y      &kp SEMI
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│    A     │    R     │    S     │    T     │    G     │   │    M     │    N     │    E     │    I     │    O     │
                     HRML( A,     R,        S,           T)  &lt MEDIA G    &lt FUN M  HRMR(N,      E,        I,         O)
@@ -127,8 +127,8 @@
                 //│    [     │    7     │    8     │    9     │    ]     │   │          │          │          │          │          │
                     &kp LBKT    &kp N7     &kp N8     &kp N9    &kp RBKT        &none     &none      &kp TAB      &none      &none 
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                //│    ;     │    4     │    5     │    6     │    =     │   │          │          │          │          │          │
-                    &kp SCLN    &kp N4     &kp N5     &kp N6    &kp EQUAL       &none    &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
+                //│    '     │    4     │    5     │    6     │    =     │   │          │          │          │          │          │
+                    &kp SQT     &kp N4     &kp N5     &kp N6    &kp EQUAL       &none    &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│     `    │    1     │    2     │    3     │    \     │   │          │          │          │          │          │
                     &kp GRAVE   &kp N1     &kp N2     &kp N3   &kp BSLH        &none      &none      &none      &none      &none
@@ -144,8 +144,8 @@
                 //│     {    │    @     │    #     │    (     │    }     │   │          │          │          │          │          │
                     &kp LBRC   &kp AMPS   &kp ASTRK  &kp LPAR   &kp RBRC        &none     &none      &kp TAB    &none      &none 
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                //│    :     │    $     │    %     │    ^     │    +     │   │          │          │          │          │          │
-                   &kp COLN    &kp DLLR   &kp PRCNT  &kp CARET   &kp PLUS        &none    &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
+                //│    "     │    $     │    %     │    ^     │    +     │   │          │          │          │          │          │
+                    &kp DQT    &kp DLLR   &kp PRCNT  &kp CARET   &kp PLUS       &none    &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
                 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 //│    ~     │    !     │    @     │    #     │    |     │   │          │          │          │          │          │
                    &kp TILDE   &kp EXCL    &kp AT   &kp HASH   &kp PIPE       &none      &none      &none      &none      &none
