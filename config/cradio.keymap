@@ -84,14 +84,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        combo_reset{
-            timeout-ms = <40>;
-            key-positions = <2 7>;
-            bindings = <&sys_reset>;
-            layers = <6>;
-            require-prior-idle-ms = <100>;
-        };
-
         combo_bootloader{
             timeout-ms = <40>;
             key-positions = <0 9>;
